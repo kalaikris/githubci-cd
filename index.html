@@ -3,58 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample HTML Page</title>
+    <title>Vibrant HTML Page</title>
     <style>
+        /* Global styles */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Arial', sans-serif;
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: #fff;
         }
+
+        h1, h2 {
+            color: #ffffff;
+        }
+
+        /* Header section */
         header {
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            text-align: center;
-        }
-        main {
-            margin-top: 20px;
-        }
-        footer {
-            text-align: center;
-            margin-top: 20px;
-            padding: 10px;
-            background-color: #333;
-            color: white;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            color: #555;
-        }
-        .content {
-            background-color: white;
+            background-color: #f44336;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Main section */
+        main {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .content {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+
+        .content:hover {
+            transform: scale(1.05);
+        }
+
+        h2 {
+            color: #ffeb3b;
+            font-size: 2.5em;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #fff;
+        }
+
+        /* Button */
+        .btn {
+            background-color: #8bc34a;
+            padding: 15px 30px;
+            border: none;
+            color: #fff;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 25px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #4caf50;
+        }
+
+        /* Footer section */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+        }
+
+        /* Animation */
+        .animated-text {
+            font-size: 3em;
+            color: #ffeb3b;
+            font-weight: bold;
+            animation: fadeIn 2s ease-in-out infinite;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-50px); }
+            50% { opacity: 1; transform: translateY(0); }
+            100% { opacity: 0; transform: translateY(50px); }
         }
     </style>
 </head>
 <body>
+
+    <!-- Header Section -->
     <header>
-        <h1>Welcome to My Sample HTML Page</h1>
+        <h1>Vibrant HTML Page</h1>
     </header>
-    
+
+    <!-- Main Content Section -->
     <main>
         <div class="content">
-            <h2>This is a Heading</h2>
-            <p>This is a sample paragraph. You can replace this text with anything you want!</p>
+            <h2>Welcome to the Vibrant World!</h2>
+            <p>Discover the world of colors, animations, and vibrant designs! This is just a sample HTML page with vibrant colors and modern styling.</p>
+            <button class="btn">Explore More</button>
         </div>
+        <div class="animated-text">Stay Awesome!</div>
     </main>
 
+    <!-- Footer Section -->
     <footer>
-        <p>Footer Content - Example Site &copy; 2024</p>
+        <p>&copy; 2024 Vibrant Web Design | All Rights Reserved</p>
     </footer>
+
 </body>
 </html>
