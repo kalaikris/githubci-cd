@@ -1,0 +1,16 @@
+name: Target Workflow
+
+on:
+  repository_dispatch:
+    types: [trigger-workflow]
+
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Run some task
+        run: echo "The target workflow has been triggered!"
