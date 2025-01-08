@@ -1,0 +1,17 @@
+name: Run on New Files in Folder
+
+on:
+  push:
+    paths:
+      - test/**
+
+jobs:
+  run-on-new-files:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Run your script
+        run: echo "New files added to my-folder"
